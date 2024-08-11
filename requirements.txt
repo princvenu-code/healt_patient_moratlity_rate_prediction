@@ -1,0 +1,12 @@
+openpyxl
+scipy
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+ipywidgets
+matplotlib
+imblearn
+scikit-learn
+-e .
