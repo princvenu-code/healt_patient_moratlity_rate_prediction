@@ -6,10 +6,8 @@ data_ingestion:
   source_URL: https://github.com/princvenu-code/Datasets/blob/main/Healthcare_cat_dataset.xlsx
   local_data_file: artifacts/data_ingestion/Healthcare_cat_dataset.xlsx
 
-prepare_base_model:
-  root_dir: artifacts/prepare_base_model
-  base_model_path: artifacts/prepare_base_model/base_model.h5
-  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+data_preparation:
+  local_data_file: artifacts/data_ingestion/Healthcare_cat_dataset.xlsx  
 
 prepare_callbacks:
   root_dir: artifacts/prepare_callbacks

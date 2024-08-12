@@ -1,6 +1,7 @@
 from linearRegressor.constants import *
 from linearRegressor.utils import common as util
-from linearRegressor.components.data_ingestion import DataIngestionConfig
+from linearRegressor.entity.config_entity import (DataIngestionConfig,
+                                                   DataPreparationConfig)
 
 
 class ConfigurationManager:
@@ -23,4 +24,12 @@ class ConfigurationManager:
             local_data_file=config.local_data_file
         )
         return data_ingestion_config    
+    
+    def get_data_preparation_config(self) -> DataPreparationConfig:
+        config = self.config.data_preparation
+
+        data_preparation_config = DataPreparationConfig(
+            local_data_file=config.local_data_file
+        )
+        return data_preparation_config    
 

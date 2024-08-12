@@ -1,6 +1,5 @@
 import os
 import urllib.request as request
-import zipfile
 from linearRegressor import logger
 from linearRegressor.utils.common import get_size
 from linearRegressor.entity.config_entity import DataIngestionConfig
